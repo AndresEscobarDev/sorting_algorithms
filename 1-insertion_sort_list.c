@@ -8,9 +8,9 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *current, *tmp;
 
-	if (list && list[0] && list[0]->next)
-		current = (*list)->next;
-
+	if (!list || !list[0] || !list[0]->next)
+		return;
+	current = (*list)->next;
 	while (current != NULL)
 	{
 		tmp = current;
