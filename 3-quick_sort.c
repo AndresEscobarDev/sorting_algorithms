@@ -47,5 +47,7 @@ void quick(int *array, int l, int h, size_t size)
  */
 void quick_sort(int *array, size_t size)
 {
+	if (!array || size < 2)
+		return;
 	quick(array, 0, size - 1, size);
 }
