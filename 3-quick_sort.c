@@ -1,8 +1,11 @@
 #include "sort.h"
 /**
- * 
- * 
- * 
+ * quick - sorts an array of integers in ascending
+ * order using the Quick sort algorithm
+ * @array: Array to sort
+ * @size: Size of array
+ * @l: low index
+ * @h: high index
  */
 void quick(int *array, int l, int h, size_t size)
 {
